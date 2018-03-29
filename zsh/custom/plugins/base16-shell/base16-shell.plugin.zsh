@@ -1,0 +1,1 @@
+/home/francisv/.dotfiles/base16-shell/base16-shell.plugin.zsh

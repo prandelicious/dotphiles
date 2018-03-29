@@ -10,11 +10,12 @@
 *.sublime-*
 *.d/localhost
 aptitude/cache
-cmus/autosave
-cmus/cache
-cmus/*-history
-cmus/*.pl
-ssh/id*
+boto
+.boto
+config/gcloud/*.db
+config/gcloud/configurations/*
+config/gcloud/logs/*
+sh/id*
 ssh/environment*
 ssh/known_hosts
 ssh/master/*
@@ -38,4 +39,4 @@ mutt/mailboxes.*
 mutt/smime/*
 mutt/certificates
 task/task/*.data
-
+aws/credentials

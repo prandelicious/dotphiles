@@ -5,6 +5,7 @@
 "
 " Authors:
 "   Ben O'Hara <bohara@gmail.com>
+"   Francis Vidal <francis.vidal@gmail.com>
 "
 
 " Call dotvim
@@ -12,17 +13,23 @@ source ~/.vim/dotvim.vim
 
 if has("user_commands")
   set nocompatible
-  filetype off
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
-  "let g:vundles=['general', 'git', 'hg', 'programming', 'completion', 'ruby', 'python', 'misc']
-  let g:vundles=['general', 'programming']
+  call plug#begin('~/.vim/plugged')
+  let g:_plugins=['general', 'git', 'programming', 'completion', 'python']
   let g:neocomplcache_enable_at_startup = 1
-  " Load 'vundles'
-  source ~/.vim/vundles.vim
+  source ~/.vim/plugins.vim
   " Add extra bundles here...
   " Bundle 'reponame'
+  call plug#end()
 endif
 
-" Customize to your needs...
+" For base16-vim
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
+" Powerline setup
+set laststatus=2
+set term=xterm-256color
+set termencoding=utf-8
+let g:airline_powerline_fonts = 1
