@@ -28,6 +28,7 @@ figlet
 git/gitattributes
 git/gitconfig
 git/gitignore
+liquidprompt
 shell/aliases
 tmux/dottmux:.tmux
 tmux/tmux.conf

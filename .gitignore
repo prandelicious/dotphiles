@@ -15,6 +15,7 @@ boto
 config/gcloud/*.db
 config/gcloud/configurations/*
 config/gcloud/logs/*
+config/gcloud/legacy_credentials/*
 sh/id*
 ssh/environment*
 ssh/known_hosts

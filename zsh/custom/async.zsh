@@ -1,0 +1,1 @@
+/home/francisv/.dotfiles/pure/async.zsh

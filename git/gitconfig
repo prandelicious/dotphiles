@@ -50,7 +50,7 @@
 [core]
     pager = less -FRSX
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	fileMode = false
+	filemode = false
 
 [diff]
     tool = vimdiff
@@ -139,6 +139,9 @@
     rea = remote add
     rex = remote rm
     rem = remote rename
+
+    # submodules
+    sub-it-up = "!update_subs() { git submodule foreach 'git fetch origin --tags; git checkout master; git pull' && git pull && git submodule update --init --recursive;}; update_subs"
 
 [push]
     default = matching

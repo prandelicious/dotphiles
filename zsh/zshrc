@@ -11,7 +11,7 @@ fi
 DEFAULT_USER="francisv"
 
 # Load the pure prompt
-fpath=( "$HOME/.dotfiles/pure" $fpath )
+#fpath=( "$HOME/.dotfiles/pure" $fpath )
 
 # Set the umask
 umask 022
@@ -20,7 +20,7 @@ umask 022
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME=""
+ZSH_THEME="pure"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -64,7 +64,7 @@ ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python aws command-not-found ssh-agent sudo tmux base16-shell fasd extract)
+plugins=(git python aws command-not-found ssh-agent sudo tmux base16-shell fasd extract liquidprompt)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,5 +109,5 @@ if [ -f ~/.dircolors ]; then
 fi
 
 # Load the Pure prompt
-autoload -U promptinit; promptinit
-prompt pure
+#autoload -U promptinit; promptinit
+#prompt pure
