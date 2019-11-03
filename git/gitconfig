@@ -51,15 +51,16 @@
     pager = less -FRSX
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	filemode = false
+	editor = code --wait
 
 [diff]
     tool = vimdiff
 
-[difftool]
-    prompt = false
-
 [merge]
-    tool = vimdiff
+    tool = myvimdiff
+
+[mergetool "myvimdiff"]
+    cmd = vim "$MERGED"
 
 [alias]
     # branch
@@ -144,7 +145,7 @@
     sub-it-up = "!update_subs() { git submodule foreach 'git fetch origin --tags; git checkout master; git pull' && git pull && git submodule update --init --recursive;}; update_subs"
 
 [push]
-    default = matching
+	default = current
 
 [url "git@github.com:"]
     insteadof = github:

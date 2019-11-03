@@ -35,6 +35,7 @@ tmux/tmux.conf
 vim/dotvim:.vim
 vim/vimrc
 zsh/zshrc
+oh-my-zsh
 [endfiles]
 
 # Hosts to sync

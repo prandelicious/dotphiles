@@ -16,3 +16,15 @@
 [submodule "vim/dotvim"]
 	path = vim/dotvim
 	url = https://github.com/dotphiles/dotvim.git
+[submodule "base16-shell"]
+	path = base16-shell
+	url = https://github.com/chriskempson/base16-shell.git
+[submodule "liquidprompt"]
+	path = liquidprompt
+	url = https://github.com/nojhan/liquidprompt.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "pure"]
+	path = pure
+	url = https://github.com/sindresorhus/pure.git

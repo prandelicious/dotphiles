@@ -1,1 +1,3 @@
 alias fix-shell-perms="find . -regex '.*\(zsh\|sh\)$' | xargs chmod 0755"
+alias vim=nvim
+alias vi=nvim

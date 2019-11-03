@@ -41,3 +41,5 @@ mutt/smime/*
 mutt/certificates
 task/task/*.data
 aws/credentials
+vim/dotvim/plugged/*
+tmux/dottmux/plugins/*

@@ -8,7 +8,7 @@ if [[ ! -d $ZSH ]]; then
   git clone git://github.com/robbyrussell/oh-my-zsh.git $ZSH
 fi
 
-DEFAULT_USER="francisv"
+DEFAULT_USER="francis"
 
 # Load the pure prompt
 #fpath=( "$HOME/.dotfiles/pure" $fpath )
